@@ -1,13 +1,22 @@
 /* Background pattern from Subtle Patterns */
+*{
+	box-sizing: border-box;
+}
+.container{
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+	max-width: 960px;
+}
+
 body{
 	background-image: url("../images/topography/topography.png");
 	font-family:'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-	color: #777777; 
+	color: #777777;
 	line-height: 26px;
 	overflow: scroll;
-	
-	
 }
+
 #contactMeContainer{
 	min-height: calc(100vh - 90px);
 }
@@ -17,18 +26,15 @@ header{
 	border-color: #cccccc;
 	border-width: 5px;
 	height: 90px;
-	
-}
-#headerDiv{
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	width: 960px;
+	max-width: 100%;
 }
+
 h1,h2{
-	
 	font-family: 'Georgia', 'Times', 'Times New Roman', serif;
 }
+
 h1{
 	background-color: #4aaaa5;
 	color: #ffff;
@@ -36,10 +42,35 @@ h1{
 	height: 90px;
 	line-height:90px;
 	vertical-align: middle;
-	text-align: center;	
+	text-align: center;
 	width: 250px;
 	float: left;
-	margin-right: 440px;
+
+}
+nav{
+	font-size: 22px;
+	float: right;
+	height: 90px;
+	line-height: 90px;
+	vertical-align: middle;
+}
+nav a{
+	color: #aeaba7;
+	text-decoration: none;
+	border-left: 1px solid #efefef;
+	line-height: 18px;
+	margin-left: 15px;
+	display: inline-block;
+	padding-left: 15px;
+}
+.navbar:last-of-type{
+	margin-right: 0px;
+}
+nav a:first-child{
+	border-left: 0 none;
+}
+a{
+	text-decoration: none;
 }
 h2{
 	color: #4aaaa5;
@@ -52,10 +83,8 @@ h2{
 input, textarea, form{
 	width: 590px;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	font-family:'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-	color: #777777; 
+	color: #777777;
 	margin-bottom: 20px;
 }
 ::placeholder{
@@ -65,7 +94,7 @@ input, textarea, form{
 }
 input, textarea{
 	border: solid 1px #efefef;
-	
+
 }
 #submitbutton{
 	width: 120px;
@@ -80,43 +109,17 @@ input, textarea{
 	line-height: 100px;
 	height: 100px;
 	vertical-align: middle;
-	margin-bottom: 30px; 
+	margin-bottom: 30px;
 	margin-left: 50px;
+	border-bottom: 2px solid #eee;
 }
 
- nav{
-	font-size: 22px;
-	width: 270px;
-	float: left;
-	height: 90px;
-	line-height: 90px;
-	vertical-align: middle;
-} 
-a{
-	color: #aeaba7;
-	text-decoration: none;
-}
-.navbar:last-of-type{
-	margin-right: 0px;
-}
-.navbar::after{
-	content: "|";
-	margin-left: 5px;
-	margin-right: 5px;
-	color: #efefef;
-}
-.navbar:last-of-type::after{
-	content: " ";
-	margin-left: 0;
-	margin-right: 0;
-}
-#contentDiv{
+ #contentDiv{
 	margin-top: 52px;
 	width: 960px;
-	margin-left: auto;
-	margin-right: auto;
-	
-}	
+	max-width: 100%;
+
+}
 p{
 	font-size: 22px;
 	margin-bottom: 30px;
@@ -130,19 +133,20 @@ p{
  }
 section{
 	width: 650px;
+	max-width: 100%;
 	background-color: #ffffff;
 	border-color: #dddddd;
 	border-width: 5px;
 	float: left;
-	margin-right: 40px;
+
 }
 #gallery{
 	height: 800px;
-}	
+}
 .gallerypic{
 	width: 260px;
 	height: 196px;
-	
+
 }
 .galleryposition{
 	position: relative;
@@ -163,7 +167,7 @@ section{
 	z-index: 5;
 }
 #ConnectWithMeHeader{
-	
+
 	margin-bottom: 25px;
 	line-height: 70px;
 	height: 70px;
@@ -180,11 +184,11 @@ section{
 } */
 aside{
 	width: 270px;
-	float: left;
+	float: right;
 	background-color: #ffffff;
 	padding-bottom: 50px;
 	text-align: center;
-	
+
 }
 .connectImage{
 	height: 62px;
@@ -209,15 +213,14 @@ footer{
 	font-size: 11px;
 	padding-top: 40px;
 	padding-bottom: 9px;
-	
+	position: fixed;
+	bottom:0;
+
 }
 .relative{
 	position: relative;
 }
-#AboutmeFooter{
-	position: absolute;
-	bottom: 0;
-}
+
 @media screen and (max-width:980px){
 
 }
@@ -231,7 +234,7 @@ footer{
 	#headerDiv{
 		position: static;
 		width: 100%;
-		
+
 	}
 	header{
 		background-color: #4aaaa5;
@@ -257,7 +260,7 @@ footer{
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		
+
 	}
 	section{
 		float: none;
@@ -265,7 +268,7 @@ footer{
 		margin-left: auto;
 		margin-right:auto;
 	}
-	
+
 	#AboutmeFooter{
 		position: fixed;
 		bottom: 0;

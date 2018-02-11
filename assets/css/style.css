@@ -249,20 +249,37 @@ input, textarea{
 }
 section{
 	width: 450px;
-	margin-bottom: 120px;
 }
+
+#mainSectionHeader{
+	width: 400px;
+}
+
+.GlobalContent{
+	width: 400px;
+}
+
 aside{
 	width: 250px;
 }
-.mainContentHeader{
-	width: 400px;
-}
+
 #ConnectWithMeHeader{
 	width: 230px;
 }
+/* Portfolio */
+.gallerypic{
+	width: 400px;
+	height: 300px;
+}
+.gallerylabels{
+	width: 400px;
+}
+.galleryposition{
+	margin-left: 0;
+}
 /* Contact Me */
 input, textarea, form{
-	width: 435px;
+	width: 400px;
 }
 }
 @media screen and (max-width:768px) and (min-width: 641px){

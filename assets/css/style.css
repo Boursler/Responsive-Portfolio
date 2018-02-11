@@ -213,7 +213,7 @@ footer{
 	height: 600px;
 }
 input, textarea, form{
-	width: 590px;
+	width: 100%;
 	display: block;
 	font-family:'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 	color: #777777;
@@ -278,103 +278,87 @@ aside{
 	margin-left: 0;
 }
 /* Contact Me */
-input, textarea, form{
-	width: 400px;
-}
+
 }
 @media screen and (max-width:768px) and (min-width: 641px){
 .contentDiv{
 	width: 640px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 #headerDiv{
 	width: 640px;
 }
 section,aside{
-	width: 600px;
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
-}
-aside{
-	clear: both;
-	margin-bottom: 120px;
-	margin-top: 50px;
-}
-.mainContentHeader{
-	width: 500px;
-}
-/* Gallery Position */
-.galleryposition{
-	margin-left: auto;
-	margin-right: auto;
+	width: 640px;
 }
 
-/* Contact Me */
-input, textarea, form{
-	width: 590px;
+#mainSectionHeader{
+	width: 580px;
 }
+
+#ConnectWithMeHeader{
+	width: 580px;
+}
+/* Gallery Position */
+
+
+/* Contact Me */
+
 }
 @media screen and (max-width:640px){
 
 	header{
-		background-color: #4aaaa5;
 		position: static;
-		width: 630px;
-		max-width: 100%;
+		height: 180px;
 	}
-	.contentDiv{
-		clear: both;
-		margin-top: 10px;
-		margin-bottom: 120px;
-		margin-left: auto;
-		margin-right: auto;
-		width: 600px;
+	h1{
+		width: 100%;
 	}
-	.mainContentHeader{
-		width: 390px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+
 	nav{
 		width: 100%;
-		background-color: #ffffff;
-		margin-bottom: 30px;
+	}
+
+	nav a{
+		width: 32%;
+		text-align: center;
+		margin: 0;
+	}
+
+	.contentDiv{
+		width: 600px;
+	}
+
+	section{
+		width: 560px;
+	}
+
+	#mainSectionHeader{
+		width: 500px;
+	}
+
+	.GlobalContent{
+		width: 500px;
 	}
 
 	aside{
-		float: none;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 440px;
-
-
-	}
-	section{
-		float: none;
-		display: block;
-		margin-left: auto;
-		margin-right:auto;
-		width: 440px;
+		width: 560px;
 	}
 
-	#AboutmeFooter{
-		position: fixed;
-		bottom: 0;
+	#ConnectWithMeHeader{
+		width: 500px;
 	}
+
 	/* gallery */
-	.galleryposition{
-		float: none;
+	.gallerypic{
+		width: 500px;
+		height: 333px;
 	}
 	.gallerylabels{
-		left: 60px;
-
+		width: 500px;
+	}
+	.galleryposition{
+		margin-left: 0;
 	}
 	/*Contact Me*/
-	input, textarea, form{
-		width: 440px;
-	}
 }

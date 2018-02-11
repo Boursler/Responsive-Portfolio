@@ -2,12 +2,7 @@
 *{
 	box-sizing: border-box;
 }
-.container{
-	width: 100%;
-	margin: 0 auto;
-	clear: both;
-	max-width: 960px;
-}
+
 
 body{
 	background-image: url("../images/topography/topography.png");
@@ -17,20 +12,24 @@ body{
 	overflow: scroll;
 }
 
+h1,h2{
+	font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+}
+
 header{
 	background-color: #ffffff;
 	border-color: #cccccc;
 	border-width: 5px;
 	height: 90px;
+	width: 100%;
+
+}
+#headerDiv{
 	display: block;
 	width: 960px;
 	max-width: 100%;
+	margin: 0 auto;
 }
-
-h1,h2{
-	font-family: 'Georgia', 'Times', 'Times New Roman', serif;
-}
-
 h1{
 	background-color: #4aaaa5;
 	color: #ffff;
@@ -74,6 +73,14 @@ h2{
 	font-weight: bold;
 }
 
+.contentDiv{
+	margin-top: 52px;
+	width: 960px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 90px;
+}
 .mainContentHeader{
 	line-height: 100px;
 	height: 100px;
@@ -85,17 +92,9 @@ h2{
 	width: 590px;
 }
 
- #contentDiv{
-	margin-top: 52px;
-	width: 960px;
-	max-width: 100%;
-
-}
 p{
 	font-size: 22px;
-	margin-bottom: 30px;
-	margin-left: 50px;
-	margin-right: 50px;
+
 }
 .clearfix::after {
 	content: "";
@@ -155,6 +154,7 @@ footer{
 	padding-bottom: 9px;
 	position: fixed;
 	bottom:0;
+	z-index: 10;
 
 }
 .relative{
@@ -215,24 +215,77 @@ input, textarea{
 	border: none;
 	color: #ffff;
 }
-@media screen and (max-width:980px){
-
+@media screen and (max-width:980px) and (min-width: 769px){
+.contentDiv{
+	width: 760px;
+	margin-left: auto;
+	margin-right: auto;
 }
-@media screen and (max-width:768px){
+#headerDiv{
+	width: 760px;
+}
+section{
+	width: 450px;
+	margin-bottom: 120px;
+}
+aside{
+	width: 250px;
+}
+.mainContentHeader{
+	width: 400px;
+}
+#ConnectWithMeHeader{
+	width: 230px;
+}
+/* Contact Me */
+input, textarea, form{
+	width: 435px;
+}
+}
+@media screen and (max-width:768px) and (min-width: 641px){
+.contentDiv{
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+#headerDiv{
+	width: 640px;
+}
+section,aside{
+	width: 600px;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+aside{
+	clear: both;
+	margin-bottom: 120px;
+	margin-top: 50px;
+}
+.mainContentHeader{
+	width: 500px;
+}
+/* Gallery Position */
+.galleryposition{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Contact Me */
+input, textarea, form{
+	width: 590px;
+}
 }
 @media screen and (max-width:640px){
 
-	#headerDiv{
-		position: static;
-		width: 640px;
-		max-width: 100%;
-
-	}
 	header{
 		background-color: #4aaaa5;
+		position: static;
+		width: 630px;
+		max-width: 100%;
 	}
-	#contentDiv{
+	.contentDiv{
 		clear: both;
 		margin-top: 10px;
 		margin-bottom: 120px;
@@ -251,17 +304,13 @@ input, textarea{
 		margin-bottom: 30px;
 	}
 
-	#AboutMeSection{
-		width: 440px;
-	}
-	#ConnectWithMe{
-		width: 440px;
-	}
 	aside{
 		float: none;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+		width: 440px;
+
 
 	}
 	section{
@@ -269,6 +318,7 @@ input, textarea{
 		display: block;
 		margin-left: auto;
 		margin-right:auto;
+		width: 440px;
 	}
 
 	#AboutmeFooter{
@@ -280,7 +330,11 @@ input, textarea{
 		float: none;
 	}
 	.gallerylabels{
-		left: 140px;
+		left: 60px;
 
+	}
+	/*Contact Me*/
+	input, textarea, form{
+		width: 440px;
 	}
 }
